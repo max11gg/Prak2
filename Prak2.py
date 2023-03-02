@@ -1,7 +1,9 @@
 NumD = 0
-year = float(input('Введите год:'))
+year = int(input('Введите год:'))
 
-if year % 4 == 0:
+
+
+if year % 4 == 0 and year % 100 !=0 or year % 400 == 0:
     fevr = 29
 else:
     fevr = 28
